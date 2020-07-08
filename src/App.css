@@ -1,3 +1,36 @@
+.card{
+  margin: 30px 0px !important;
+  margin-left: 2% !important;
+}
+.infected{
+  border-bottom: 10px solid rgb(0, 0, 0) !important;
+  box-shadow: 5px 10px #888888 !important;
+  background-color: blueviolet !important;
+  color: aliceblue !important;
+}
+.recovered{
+  border-bottom: 10px solid rgb(0,0,0) !important;
+  background-color: green !important;
+  color: aliceblue !important;
+  box-shadow: 5px 10px #888888 !important;
+}
+.deaths{
+  border-bottom:10px solid rgb(0, 0, 0) !important;
+  background-color:  red !important;
+  color: aliceblue !important;
+  box-shadow: 5px 10px #888888 !important;
+}
+.container{
+  margin: 0 auto;
+  max-width: 80%;
+}
+.countryOption{
+  width: 100%;
+  margin: 10px auto;
+  
+}
+
+
 .App {
   text-align: center;
 }

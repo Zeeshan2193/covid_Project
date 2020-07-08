@@ -1,24 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { CountryPicker } from './components/CountryPicker';
+import { Chart } from './components/Chart';
+import { Cards } from './components/Cards';
 
 function App() {
+  const ConuntrySelect = useState('');
+  console.log(ConuntrySelect, "countryName");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CountryPicker country={ConuntrySelect} />
+      <Cards country={ConuntrySelect} />
+      <Chart country={ConuntrySelect} />
     </div>
   );
 }
