@@ -20,7 +20,7 @@ export const Chart = ({country}) => {
   setData(apiData);
   }
   getData();
-},[country]);
+},[url]);
 //data.map((obj) => {
  // return(console.log ( obj.totalConfirmed));
   //});

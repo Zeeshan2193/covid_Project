@@ -11,18 +11,18 @@ export const Cards = ({country}) => {
     {
         url = `${url}/countries/${country[0]}`;
     }
-    
+     
     // alert(url)
     const [data, setData] = useState({});
     useEffect(() =>{
     async function getData(){
     const response= await fetch(url);
     const covid = await response.json();
-   // console.log(covid);
+    console.log(covid,"covid");
     setData(covid);
     }
     getData();
-},[country])
+},[url])
     if(!data.confirmed){return 'Loading......................'; }
     return (
         <div>
