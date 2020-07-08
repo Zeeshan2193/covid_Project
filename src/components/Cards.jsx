@@ -46,7 +46,7 @@ export const Cards = ({country}) => {
                      <CountUp start={0} end= {data.recovered.value} duration ={4.5} separator =',' />
                      </Typography>
                      <Typography>{new Date(data.lastUpdate).toDateString()}</Typography>
-                     <Typography varient="body2">Number Of Active Cases of Covid-19</Typography>
+                     <Typography varient="body2">Number Of Recovered People In Covid-19</Typography>
                  </CardContent>
             </Grid>
 
@@ -57,7 +57,7 @@ export const Cards = ({country}) => {
                      <CountUp start={0} end= {data.deaths.value} duration ={4.5} separator =',' />
                      </Typography>
                      <Typography > {new Date(data.lastUpdate).toDateString()}</Typography>
-                     <Typography varient="body2">Number Of Active Cases of Covid-19</Typography>
+                     <Typography varient="body2">Number Of Deaths Due To Covid-19</Typography>
                  </CardContent>
             </Grid>
              
